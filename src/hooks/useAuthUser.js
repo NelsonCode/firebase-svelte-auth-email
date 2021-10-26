@@ -19,7 +19,7 @@ export const useAuthUser = () => {
         isLogged.set(false)
       } else {
         isLogged.set(true)
-        if (pathname === "/login" || "/register") {
+        if (pathname === "/login" || pathname === "/register") {
           navigate("/");
         }
       }
